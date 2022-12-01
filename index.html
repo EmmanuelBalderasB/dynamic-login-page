@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet"  type="text/css" href="./style/style.css">
+    <link rel="icon" type="image/x-icon" href="./resources/Icons/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <main>
+        <div class="card-container">
+            <div class="card-head">
+                <div class="left">
+                    <p id="Sign">Sign</p>
+                </div>
+                <div class="right">
+                    <p id="In">In</p>
+                </div>
+                <div class="introducton">
+                    <p id="introduction">Please enter your login info to use our services</p>
+                </div>
+            </div>
+            <form class="form" id="form">
+                <div class="form-item">
+                    <input type="email" name="email" id="input-email" placeholder="Enter Email">
+                </div>
+                <div class="form-item" id="container-password">
+                    <input type="password" name="password" id="input-password" placeholder="Enter Password">
+                </div>
+                <div class="form-item-other">
+                    <div class="checkbox">
+                        <label for="remember-me" id="label-checkbox">Remember me</label>
+                        <input type="checkbox" id="remember-me">
+                    </div>
+                    <button type="submit">Sign In</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="./scripts/app.js" async defer></script>
+</body>
+</html>

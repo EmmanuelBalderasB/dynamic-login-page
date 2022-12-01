@@ -1,0 +1,164 @@
+body {
+    background-image: url('../resources/Images/medium.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-family: 'Barlow';
+    font-family: 'Quicksand';
+}
+
+.card-container {
+    height: fit-content;
+    width: 550px;
+    background: rgba(255, 255, 255);
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    border-radius: 40px;
+    border: none;
+}
+
+.card-container .card-head {
+    text-align: center;
+    font-family: 'Quicksand';
+    font-weight: 200;
+    font-size: 2.5rem;
+}
+
+.card-container .card-head .left {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.card-container .card-head .left p {
+    color: white;
+    background: black;
+    border-radius: 10px;
+    padding: 1.2rem;
+    margin-bottom: 0px;
+}
+
+.card-container .card-head p#introduction {
+    font-size: .9rem;
+    font-weight:400;
+    margin-bottom: 0px;
+}
+
+.card-container .card-head .right {
+    display: inline-block;
+}
+
+.card-container .card-head .right p {
+    margin-bottom: 0px;
+}
+
+.card-container .card-head .left,
+.card-container .card-head .right {
+    margin-bottom: 0px;
+    height: fit-content;
+}
+
+.card-container .form {
+    padding: 3rem;
+    padding-top: 0;
+    margin-top: 2rem;
+}
+
+.card-container .form .form-item {
+    margin-bottom: 2rem;
+
+}
+
+.card-container .form .form-item input {
+    margin-top: 0rem;
+    padding: 1rem;
+    width: 94%;
+    border: none;
+    background-color: rgba(28, 28, 28, 1);
+    border-radius: 20px;
+    color: rgba(255, 255, 255,1);
+    outline: none;
+    font-weight: 300;
+}
+
+.card-container .form .form-item#container-password {
+    margin-bottom: 1rem;
+}
+
+.card-container .form .form-item input::placeholder {
+    font-weight: 200;
+    color: white;
+    opacity: .8;
+}
+.card-container .form .form-item-other {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-container .form .form-item-other .checkbox {
+    text-align: left;
+    margin-top: 0;
+}
+
+.card-container .form .form-item-other .checkbox label#label-checkbox {
+    font-size: .9rem;
+}
+
+.card-container .form .form-item-other .checkbox input[type="checkbox"]:checked {
+    accent-color: rgb(255, 204, 2);
+}
+
+.card-container .form .form-item-other button[type="submit"] {
+    margin-top: 2rem;
+    border: solid 2px black;
+    background: white;
+    padding: 1rem 4rem;
+    border-radius: 100px;
+}
+
+.card-container .form .form-item-other button[type="submit"]:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+@media (min-width: 1323px) {
+    body {
+        background-image: url('../resources/Images/large.jpg');
+        background-repeat:round;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 414px) {
+    body {
+        background-image: url('../resources/Images/medium.jpg');
+        background-repeat:round;
+        background-attachment: fixed;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        position: relative;
+    }
+    .card-container {
+        position: absolute;
+        height: fit-content;
+        width: 375px;
+        background: rgba(255, 255, 255);
+        position: static;
+        top: 25%;
+        border-radius: 40px;
+        border: none;
+        margin-top: 25%;
+
+    }
+    .card-container .form .form-item-other button[type="submit"] {
+        background: white;
+        color: black;
+    }
+}
